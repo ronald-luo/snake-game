@@ -6,8 +6,8 @@ let h;
 
 function setup() {
     createCanvas(windowWidth,windowHeight);
-    w = floor(windowWidth/resolution);
-    h = floor(windowHeight/resolution)
+    w = floor(windowWidth/resolution)*0.8;
+    h = floor(windowHeight/resolution)*0.8;
     frameRate(9)
     snake = new Snake();
     foodlocation();
