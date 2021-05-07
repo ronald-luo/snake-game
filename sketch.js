@@ -40,6 +40,7 @@ function draw() {
     rect(food.x, food.y, 1, 1);
 }
 
+
 function keyPressed() {
     switch (keyCode) {
         case UP_ARROW:
@@ -56,7 +57,6 @@ function keyPressed() {
             break
     }
 }
-
 
 document.addEventListener('touchstart', handleTouchStart, false);
 document.addEventListener('touchmove', handleTouchMove, false);
