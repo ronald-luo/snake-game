@@ -4,10 +4,20 @@ let food;
 let w;
 let h;
 
+
+// 800, 500; w = 800, h = 500
 function setup() {
-    createCanvas(800, 500);
-    w = floor(800 / resolution);
-    h = floor(500 / resolution);
+    if (screen.width < 840) {
+        height = screen.height/1.5
+        width = screen.width/1.5
+    } else {
+        height = screen.height /1.75
+        width = screen.width /1.75
+    }
+
+    createCanvas(width, height);
+    w = floor(width / resolution);
+    h = floor(height / resolution);
     frameRate(9)
     snake = new Snake();
     foodlocation();
